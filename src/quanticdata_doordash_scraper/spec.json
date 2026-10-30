@@ -1,0 +1,68 @@
+{
+ "cli": "doordash-scraper",
+ "name": "DoorDash Scraper API",
+ "version": "0.1.0",
+ "description": "DoorDash scraper for Python and the command line: restaurants delivering in a US city, with rating, exact review count, cuisine, price band, address, delivery fee, delivery time, promotions and popular menu items with prices, as JSON or CSV. Free and open source; sign in with your QuanticData account, no proxies or headless browser to run.",
+ "links": {
+  "repo": "https://github.com/quantumproxies/doordash-scraper",
+  "page": "https://quanticdata.io/collectors/doordash-scraper-api/?utm_source=github&utm_medium=cli&utm_campaign=doordash-scraper",
+  "billing": "https://app.quanticdata.io/billing?utm_source=github&utm_medium=cli&utm_campaign=doordash-scraper",
+  "pricing": "https://quanticdata.io/pricing/?utm_source=github&utm_medium=cli&utm_campaign=doordash-scraper"
+ },
+ "commands": [
+  {
+   "name": "restaurants",
+   "collector": "doordash_restaurants",
+   "method": "restaurants",
+   "help": "DoorDash restaurants delivering in a US city",
+   "description": "Restaurants delivering in a US city — rating, exact review count, cuisine, address.",
+   "positional": "location",
+   "positional_is_list": false,
+   "positional_optional": false,
+   "columns": [
+    "rank",
+    "name",
+    "cuisine",
+    "rating",
+    "reviews",
+    "price_range",
+    "eta_minutes",
+    "address"
+   ],
+   "sample": "doordash_restaurants",
+   "inputs": [
+    {
+     "name": "location",
+     "type": "string",
+     "required": true,
+     "description": "US city and state, e.g. \"Austin, TX\".",
+     "arg": "location"
+    },
+    {
+     "name": "cuisine",
+     "type": "string",
+     "required": false,
+     "description": "Narrow to one cuisine, e.g. \"mexican\" or \"sushi\". Each cuisine has its own list for the city, so running several cuisines covers more restaurants.",
+     "arg": "cuisine"
+    },
+    {
+     "name": "country",
+     "type": "string",
+     "required": false,
+     "description": "Country to run the request from, as an ISO 3166-1 alpha-2 code (us, gb, de...).",
+     "arg": "country"
+    },
+    {
+     "name": "max_results",
+     "type": "integer",
+     "required": false,
+     "description": "How many restaurants to deliver at most (1–50). You pay only for delivered restaurants.",
+     "min": 1,
+     "max": 50,
+     "default": 50,
+     "arg": "max_results"
+    }
+   ]
+  }
+ ]
+}

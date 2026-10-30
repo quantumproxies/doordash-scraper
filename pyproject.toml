@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quanticdata-doordash-scraper"
+version = "0.1.0"
+description = "DoorDash scraper for Python and the command line: restaurants delivering in a US city, with rating, exact review count, cuisine, price band, address, delivery fee, delivery time, promotions and popular menu items with prices, as JSON or CSV. Free and open source; sign in with your QuanticData account, no proxies or headless browser to run."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.9"
+authors = [{ name = "QuanticData", email = "hello@quanticdata.io" }]
+keywords = ["doordash", "doordash-scraper", "doordash-api", "doordash-data", "restaurant-data", "restaurant-scraper", "food-delivery", "local-business", "lead-generation", "web-scraping", "scraper", "python"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Topic :: Internet :: WWW/HTTP :: Indexing/Search",
+  "Typing :: Typed",
+]
+dependencies = []
+
+[project.optional-dependencies]
+pandas = ["pandas>=1.3"]
+
+[project.scripts]
+doordash-scraper = "quanticdata_doordash_scraper.__main__:run"
+
+[project.urls]
+Homepage = "https://quanticdata.io/collectors/doordash-scraper-api/?utm_source=github&utm_medium=pypi&utm_campaign=doordash-scraper"
+Documentation = "https://quanticdata.io/docs/"
+Source = "https://github.com/quantumproxies/doordash-scraper"
+Issues = "https://github.com/quantumproxies/doordash-scraper/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"quanticdata_doordash_scraper" = ["spec.json", "py.typed"]

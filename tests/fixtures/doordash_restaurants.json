@@ -1,0 +1,110 @@
+{
+ "run_id": "cmvksj5090uad41o5f6g9zeiy",
+ "slug": "doordash_restaurants",
+ "version": "1.1.1",
+ "status": "done",
+ "input": {
+  "location": "Austin, TX",
+  "max_results": 3
+ },
+ "count": 3,
+ "partial": true,
+ "finished_at": "2026-10-23T09:51:55.665Z",
+ "results": [
+  {
+   "id": "24726613",
+   "url": "https://www.doordash.com/store/pardon-my-cheesesteak-austin-24726613/",
+   "city": "Austin",
+   "name": "Pardon My Cheesesteak",
+   "rank": 1,
+   "image": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,format=auto/https://doordash-static.s3.amazonaws.com/media/store/header/6da5bbe5-dae0-4186-9660-ca8acade860b.png",
+   "state": "TX",
+   "rating": 3.8,
+   "street": "707 East Cesar Chavez Street",
+   "address": "707 E Cesar Chavez St, Austin, TX 78701, USA",
+   "country": "United States",
+   "cuisine": "American",
+   "reviews": 368,
+   "distance": "0.5 mi",
+   "latitude": 30.261007,
+   "longitude": -97.737341,
+   "sponsored": false,
+   "categories": [
+    "American",
+    "Fast Food"
+   ],
+   "promotions": [
+    "$5 off on $35+"
+   ],
+   "eta_minutes": 29,
+   "postal_code": "78701",
+   "price_range": "$$",
+   "delivery_fee": "$0 delivery fee",
+   "offers_pickup": false,
+   "popular_items": [
+    {
+     "name": "Cheesesteak",
+     "image": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/5c87a61e-2c67-4486-a5ec-38dbd001ccb7-779cfa7a-35a4-43e5-9504-83e339cabe52-retina-large.JPG",
+     "price": 16.53,
+     "currency": "USD",
+     "description": "Thinly sliced steak with melted provolone, cheese sauce & caramelized onions on a toasted hoagie roll."
+    },
+    {
+     "name": "Chipotle Cheesesteak",
+     "image": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/cd1acb07-728f-4fe4-b4d4-4e34313d3390-e71dfdcd-06c0-43da-8040-a49e4f894a35-retina-large.JPG",
+     "price": 17.14,
+     "currency": "USD",
+     "description": "Thinly sliced steak with melted provolone, cheese sauce & caramelized onions, doused with chipotle sauce on a toasted hoagie roll."
+    }
+   ]
+  },
+  {
+   "id": "52057067",
+   "url": "https://www.doordash.com/store/jasmines-restaurant-del-valle-52057067/",
+   "city": "Del Valle",
+   "name": "Jasmines Restaurant",
+   "rank": 2,
+   "image": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,format=auto/https://doordash-static.s3.amazonaws.com/media/store/header/6562d287-5742-4c7f-8a2a-0364801390cc.jpg",
+   "state": "TX",
+   "rating": null,
+   "street": "2463 Highway 71 E",
+   "address": "2463 Highway 71 E, Del Valle, TX 78617, USA",
+   "country": "United States",
+   "cuisine": "Mexican",
+   "reviews": null,
+   "distance": "6.2 mi",
+   "latitude": 30.21364198531955,
+   "longitude": -97.65913006849587,
+   "sponsored": false,
+   "categories": [
+    "Mexican",
+    "Casual Dining"
+   ],
+   "promotions": [
+    "Newly Added"
+   ],
+   "eta_minutes": null,
+   "postal_code": "78617",
+   "price_range": "$",
+   "delivery_fee": "$0 delivery fee",
+   "offers_pickup": false,
+   "popular_items": [
+    {
+     "name": "Tacos Al Carbón",
+     "image": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/8f32019e-54a6-447d-83cb-f463b9a8df39-retina-large.jpg",
+     "price": 19.23,
+     "currency": "USD",
+     "description": "Two grilled fajita tacos (beef or chicken), flour or corn tortillas, pico de gallo, guacamole, sour cream, served with rice and charro beans."
+    },
+    {
+     "name": "Pollo Con Chipotle",
+     "image": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/a5a0824c-3601-4f3e-b3a2-64f3f855ced6-retina-large.jpg",
+     "price": 18.98,
+     "currency": "USD",
+     "description": "Grilled chicken breast topped with chipotle sauce, onions and jack cheese, served with rice, refried beans and avocado slices."
+    }
+   ]
+  }
+ ],
+ "_note": "Real run of 2026-10-23, two of the three restaurants (the run stopped at max_results); popular items cut to two per restaurant (real rows carry up to eight)."
+}
